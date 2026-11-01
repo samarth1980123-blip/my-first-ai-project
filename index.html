@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Last Signal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">CITY OF GLASS // NIGHT OPERATIONS</p>
+          <h1>The Last Signal</h1>
+        </div>
+        <div class="status-pill" id="status-pill">Night Cycle 1</div>
+      </header>
+
+      <main class="game-layout">
+        <section class="panel primary-panel">
+          <div class="meta-row">
+            <span id="location-tag">Current zone</span>
+            <span id="objective-tag">Objective</span>
+          </div>
+
+          <div class="scene-card" id="scene-card">
+            <h2 id="scene-title">Loading mission...</h2>
+            <p id="scene-description"></p>
+            <ul id="scene-list"></ul>
+          </div>
+
+          <div class="choices" id="choices"></div>
+        </section>
+
+        <aside class="panel sidebar">
+          <h3>Operator HUD</h3>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <label>Health</label>
+              <strong id="health">100</strong>
+            </div>
+            <div class="stat-box">
+              <label>Energy</label>
+              <strong id="energy">100</strong>
+            </div>
+            <div class="stat-box">
+              <label>Morale</label>
+              <strong id="morale">70</strong>
+            </div>
+            <div class="stat-box">
+              <label>Credits</label>
+              <strong id="credits">20</strong>
+            </div>
+          </div>
+
+          <div class="inventory-box">
+            <h4>Inventory</h4>
+            <ul id="inventory"></ul>
+          </div>
+
+          <div class="log-box">
+            <h4>Mission Log</h4>
+            <div id="log"></div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
